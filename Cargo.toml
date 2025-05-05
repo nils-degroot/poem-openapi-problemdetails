@@ -1,0 +1,22 @@
+[package]
+name = "poem-openapi-problemdetails"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2.0.101"
+quote = "1.0.40"
+proc-macro2 = "1.0.95"
+darling = "0.20.11"
+thiserror = "2.0.12"
+
+[dev-dependencies]
+poem = { version = "3.1.10", features = ["test"] }
+poem-openapi = { version = "5.1.14", features = ["swagger-ui"] }
+tokio = { version = "1.44.2", features = ["full"] }
+serde_json = "1.0.140"
+problemdetails = { version = "0.6.0", features = ["poem"] }
+insta = { version = "1.43.1", features = ["json"] }
