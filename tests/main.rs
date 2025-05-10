@@ -12,7 +12,7 @@ enum IndexError {
     #[oai_problemdetails(status = 401, title = "Something went wrong")]
     ErrorWithTitle,
     #[error("")]
-    #[oai_problemdetails(status = 403, detail = "Fill this number `{0}`")]
+    #[oai_problemdetails(status = 403, detail = "This request has failed due to some reason")]
     ErrorWithDetail(u16),
 }
 
@@ -150,7 +150,7 @@ async fn it_should_respond_with_a_detail_if_provided() {
         body,
         @r###"
             {
-              "detail": "Fill this number `42`",
+              "detail": "This request has failed due to some reason",
               "status": 403,
               "type": "about:blank"
             }

@@ -20,7 +20,6 @@ enum IndexError {
     #[oai_problemdetails(
         status = 422,
         title = "The object passed failed to validate.",
-        detail = "This is the details of the validation object, this may change from request to request. Here is why this request failed: {0}",
         ty = "https://example.net/validation-error"
     )]
     InvalidValue(&'static str),
@@ -39,7 +38,7 @@ async fn main() {
 
     let app = Route::new().nest("/", api_service).nest("/docs", ui);
 
-    Server::new(TcpListener::bind("127.0.0.1:3000"))
+    Server::new(TcpListener::bind("127.0.0.1:8080"))
         .run(app)
         .await
         .expect("Failed to run server");
