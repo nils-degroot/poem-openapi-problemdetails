@@ -842,6 +842,8 @@ dependencies = [
 [[package]]
 name = "poem-openapi-problemdetails-macro"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "04ca037d8b2c031dd57286520df150d96920ef9cd57f5079a32d5de6d8bda135"
 dependencies = [
  "darling",
  "proc-macro2",
