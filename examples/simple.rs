@@ -16,7 +16,7 @@ impl Api {
 #[derive(Debug, thiserror::Error, poem_openapi_problemdetails::ApiProblemDetails)]
 enum IndexError {
     /// The provided value was invalid
-    #[error("Testings")]
+    #[error("The object passed failed to validate.")]
     #[oai_problemdetails(
         status = 422,
         title = "The object passed failed to validate.",

@@ -2,6 +2,12 @@
 name = "poem-openapi-problemdetails"
 version = "0.1.0"
 edition = "2024"
+authors = ["Nils de Groot <nils@peeko.nl>"]
+description = "Integration layer between problemdetails and poem_openapi"
+license = "MIT"
+documentation = "https://docs.rs/poem-openapi-problemdetails"
+homepage = "https://github.com/nils-degroot/poem-openapi-problemdetails"
+repository = "https://github.com/nils-degroot/poem-openapi-problemdetails"
 
 [dependencies]
 poem-openapi-problemdetails-macro = { path = "./poem-openapi-problemdetails-macro/" }

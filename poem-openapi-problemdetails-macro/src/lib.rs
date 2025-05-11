@@ -10,6 +10,8 @@ use proc_macro2::Span;
 use syn::{Attribute, DeriveInput, Error, Expr, ExprLit, Ident, Lit, Meta, parse_macro_input};
 
 #[proc_macro_derive(ApiProblemDetails, attributes(oai_problemdetails))]
+/// Macro to generate problemdetails responses based on the provided macro input. See the root
+/// libary for documentation.
 pub fn derive_response(input: TokenStream) -> TokenStream {
     let args = parse_macro_input!(input as DeriveInput);
 

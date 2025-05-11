@@ -2,6 +2,12 @@
 name = "poem-openapi-problemdetails-macro"
 version = "0.1.0"
 edition = "2024"
+authors = ["Nils de Groot <nils@peeko.nl>"]
+description = "Integration layer between problemdetails and poem_openapi"
+license = "MIT"
+documentation = "https://docs.rs/poem-typed-multipart"
+homepage = "https://github.com/nils-degroot/poem-typed-multipart"
+repository = "https://github.com/nils-degroot/poem-typed-multipart"
 
 [lib]
 proc-macro = true
